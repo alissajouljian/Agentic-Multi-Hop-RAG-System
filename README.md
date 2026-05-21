@@ -99,8 +99,6 @@ User Query
 
 ```bash
 cd NLP
-python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -137,8 +135,6 @@ python main.py chat
 # Streamlit chat UI  →  opens at http://localhost:8501
 python main.py streamlit
 
-# Gradio web UI  →  opens at http://localhost:7860
-python main.py serve
 ```
 
 ### 5. Evaluate & Plot
@@ -165,16 +161,6 @@ python main.py plots
 python main.py streamlit
 ```
 
-### Gradio Web UI (`http://localhost:7860`)
-- Radio toggle: Agentic Multi-Hop RAG vs Static Single-Shot RAG
-- Answer + verification confidence score + collapsible agent trace
-- 4 built-in example multi-hop questions
-
-```bash
-python main.py serve
-# Or with public share link:
-python main.py serve --share
-```
 
 ### Rich CLI
 - Colour-coded interactive terminal interface
@@ -217,7 +203,6 @@ NLP/
 │   │   └── visualize.py         # 7 publication-quality plots
 │   └── interface/
 │       ├── streamlit_app.py     # Streamlit chat UI (port 8501)
-│       ├── gradio_app.py        # Gradio web UI (port 7860)
 │       └── cli.py               # Rich interactive terminal CLI
 ├── data/
 │   ├── raw/corpus.jsonl         # Cached Wikipedia corpus
@@ -261,7 +246,6 @@ All 9 stretch-goal components from the assignment are complete:
 | Orchestration | Custom Python 6-state FSM |
 | CLI | Click + Rich |
 | Chat UI | Streamlit |
-| Web UI | Gradio |
 | Evaluation Plots | Matplotlib + Seaborn + Pandas |
 
 ---
