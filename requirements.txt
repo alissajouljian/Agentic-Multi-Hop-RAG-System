@@ -1,0 +1,36 @@
+# Core LLM & Embeddings
+openai>=1.30.0
+sentence-transformers>=3.0.0
+transformers>=4.40.0
+torch>=2.2.0
+
+# Vector Store & Retrieval
+faiss-cpu>=1.8.0
+rank-bm25>=0.2.2
+numpy>=1.26.0
+
+# NLI Verification
+scipy>=1.12.0
+
+# Data & Corpus
+datasets>=2.19.0
+huggingface-hub>=0.23.0
+
+# Evaluation
+rouge-score>=0.1.2
+nltk>=3.8.1
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+pandas>=2.2.0
+
+# Interface
+gradio>=4.30.0
+streamlit>=1.35.0
+rich>=13.7.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+click>=8.1.0

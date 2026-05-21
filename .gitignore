@@ -1,0 +1,30 @@
+# ── Secrets ────────────────────────────────────────────────────────────────
+.env
+
+# ── Python ─────────────────────────────────────────────────────────────────
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# ── Large data & index files ────────────────────────────────────────────────
+# Rebuild with: python main.py index --subset 5000
+data/raw/
+data/processed/
+data/indices/
+
+# ── OS / Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ── Claude Code settings ─────────────────────────────────────────────────────
+.claude/
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
